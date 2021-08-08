@@ -11,10 +11,16 @@ toDoAdd.addEventListener('click',function() {
     paragraph.innerText=toDoInput.value;
     toDoBox.appendChild(paragraph);
     toDoInput.value= "";
+    
+    //CheckBox
+    
     var checkbox = document.createElement('input');
     checkbox.classList.add('checkbox-css')
     checkbox.type ='checkbox';
     paragraph.appendChild(checkbox);
+    
+    //Delete Button
+    
    var deleted = document.createElement('button');
    deleted.classList.add('delete-css')
     deleted.innerHTML = '<i class="fas fa-trash"></i>';
